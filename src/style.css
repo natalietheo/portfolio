@@ -42,6 +42,8 @@ h2.header2 {
 h2.subheading {
     font-size: 2.25em;
     font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    text-align: center;
 }
 
 p {
@@ -52,4 +54,14 @@ p {
 div.bg-image {
     background-image: url('/images/background.jpg');
     background-size: cover;
+}
+
+.image-cropper {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    border-color: lightgray;
+    border : 5px;
 }
