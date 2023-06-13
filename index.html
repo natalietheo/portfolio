@@ -14,8 +14,9 @@
 
 
 <!-- font -->
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@100;300&display=swap" rel="stylesheet">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poiret+One&family=Poppins:wght@100;300&display=swap" rel="stylesheet">
 <!-- material icons -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet">
@@ -26,10 +27,8 @@
     <div class="container-fluid px-0">
 
  
-
-
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow bg-transparent">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Home</a>
           <button 
@@ -41,9 +40,9 @@
           aria-expanded="false" 
           aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button> -->
 
-          <div class="container px-3">
+          <!-- <div class="container px-3">
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                 <li class="nav-item">
@@ -60,34 +59,41 @@
           </div>
         </div>
       </nav>
-  
+   -->
 
     <!-- hero -->
-    <header class="bg-light py-5">
+
+    <header class="bg-light">
+        <div
+  class="bg-image"
+  style="
+    background-image: url('/images/background.jpg');
+    height: 750px;
+  "
+>
         <div class="container px-5">
           <div class="row align-items-center">
             <div class="col-lg-8 col-xl-7 col-xxl-6">
               <div class="my-5">
-                <h2 class="text-center fw-bold mb-2">Hi! I'm Natalie,</h2>
-                <h2 class="text-success text-center fw-bold mb-2">a full-stack web developer</h2>
-                <p class="lead text-muted mb-4">
+                <h2 class="header">Natalie Theodoropoulou</h2>
+                <h2 class="header2">software developer based in Bristol</h2>
+                <!-- <p class="lead text-light mb-4">
                   I specialize in...
-                </p>
-                <div class="d-grid gap-3 d-sm-flex justify-content-center">
-                  <a class="btn btn-outline-success btn-large text-uppercase" href="#about">
+                </p> -->
+                <div class="d-grid gap-3 d-sm-flex justify-content-left">
+                  <a class="btn btn-outline-light btn-large text-uppercase" href="#about">
                     About Me
                   </a>
-                  <a class="btn btn-outline-success btn-large text-uppercase" href="#projects">
+                  <a class="btn btn-outline-light btn-large text-uppercase" href="#projects">
                     My Projects
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col-xl-5 col-xxl-6 justify-content-center">
-              <img class="img-fluid rounded-3 my-5" src="images/hero.jpeg" alt="Hero Image">
-            </div>
+            
           </div>
         </div>
+    </div>
       </header>
     <!-- end hero  -->
 
@@ -95,23 +101,32 @@
 <!-- about -->
 <section id="about">
     
-    <div class="container py-5">
-        <div class="row justify-content-center">
-          <h2 class="fw-bold text-center">About Me</h2>
-          <p class="lead text-muted mb-5 text-center">
-            I am a motivated, adaptable and collaborative career-changer.          </p>
-        </div>
-      </div>
+    <div class="container py-5 justify-content-center" >
     
+            <h2 class="subheading">About Me</h2>
+            <p>
+              I am a motivated, adaptable and collaborative career-changer. My previous work experience
+            is in founding and running my own wholesale vegan bakery in Mesa, Arizona, where our bestsellers 
+        included our cherry bakewell and our fudgy sea salt brownie. <br> <br>
+    I found that I really enjoyed the more technical aspects of baking and owning a business, as well as being able to 
+    create something without being in a hot kitchen! <br><br>
+    
+    I recently completed <a href="http://www.makers.tech">
+Makers Academy</a>'s full-stack software development bootcamp, and am now in search of my first role as a dev.           </p>
+            
+               </div>
+    
+                 </div>
+       <img class="image-cropper" src="../images/natalie.jpg" alt="Image of Natalie">  
 </section>
 <!-- projects -->
 
 <section id="projects">
     <div class="container py-5">
         <div class="row justify-content-center">
-          <h2 class="fw-bold text-center">Projects</h2>
-          <p class="lead text-muted mb-5 text-center">
-            Some of my latest projects:      </p>
+          <h2 class="subheading">Projects</h2>
+          <p>
+            Here are some of my latest projects.      </p>
 
         </div>
       </div>
@@ -123,9 +138,9 @@
                     <img src="/images/thermostat_screenshot.png" class="card-img-top" alt="thermostat project">
                     <div class="card-body p-4">
                       <h5 class="card-title">Thermostat Project</h5>
-<div class="badge bg-secondary rounded-pill">NodeJS</div>
-<div class="badge bg-secondary rounded-pill">HTML</div>
-<div class="badge bg-secondary rounded-pill">CSS</div>
+<div class="badge rounded-pill">NodeJS</div>
+<div class="badge rounded-pill">HTML</div>
+<div class="badge rounded-pill">CSS</div>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a class="btn btn-outline-success btn-sm text-uppercase"
                       href="https://github.com/natalietheo/thermostat"
@@ -137,14 +152,14 @@
                   </div>
                   
   </div>
-  <div class="col-lg-4 mx-auto mb-5">
+  <!-- <div class="col-lg-4 mx-auto mb-5">
     <div class="card" style="width: 18rem;">
       <img src="" class="card-img-top" alt="project">
       <div class="card-body p-4">
         <h5 class="card-title">{coming soon}</h5>
-<div class="badge bg-secondary rounded-pill">NodeJS</div>
-<div class="badge bg-secondary rounded-pill">HTML</div>
-<div class="badge bg-secondary rounded-pill">CSS</div>
+<div class="badge rounded-pill">some</div>
+<div class="badge rounded-pill">cool</div>
+<div class="badge rounded-pill">tech</div>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a class="btn btn-outline-success btn-sm text-uppercase"
         href="https://github.com/natalietheo/"
@@ -161,9 +176,9 @@
       <img src="" class="card-img-top" alt="project">
       <div class="card-body p-4">
         <h5 class="card-title">{coming soon}</h5>
-<div class="badge bg-secondary rounded-pill">NodeJS</div>
-<div class="badge bg-secondary rounded-pill">HTML</div>
-<div class="badge bg-secondary rounded-pill">CSS</div>
+<div class="badge rounded-pill">some</div>
+<div class="badge rounded-pill">cool</div>
+<div class="badge rounded-pill">tech</div>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         <a class="btn btn-outline-success btn-sm text-uppercase"
         href="https://github.com/natalietheo/"
@@ -175,7 +190,7 @@
     </div>
     
 </div>
-</div>
+</div> -->
             </div>
         </div>
       </div>
