@@ -58,7 +58,7 @@ div.bg-image {
     background-size: cover;
 }
 
-.image-cropper {
+.image {
     width: 200px;
     height: 200px;
     position: relative;
@@ -66,6 +66,7 @@ div.bg-image {
     border-radius: 50%;
     border-color: lightgray;
     border : 5px;
+
 }
 
 div.badge {
@@ -81,4 +82,9 @@ div.badge {
     p {
         font-size: 100%;
     }
+  }
+
+  div.profile-image {
+    margin-left: auto;
+    margin-right: auto;
   }
