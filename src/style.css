@@ -26,28 +26,28 @@ p {
 }
 
 h2.header {
-    font-size: 6em;
+    font-size: 600%;
     font-family: 'Lora', serif;
     color: white;
     font-weight: bold;
 }
 
 h2.header2 {
-    font-size: 3em;
+    font-size: 300%;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
 }
 
 h2.subheading {
-    font-size: 2.25em;
+    font-size: 250%;
     font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     text-align: center;
 }
 
 p {
-    font-size: 1.25em;
+    font-size: 125%;
     font-family: 'Lora', serif;
 }
 
