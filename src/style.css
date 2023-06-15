@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -33,10 +34,11 @@ h2.header {
 }
 
 h2.header2 {
-    font-size: 300%;
+    font-size: 200%;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
+  
 }
 
 h2.subheading {
@@ -65,3 +67,15 @@ div.bg-image {
     border-color: lightgray;
     border : 5px;
 }
+
+@media only screen and (max-width: 600px) {
+    h2.header {
+        font-size: 200%
+    }
+    h2.header2 {
+        font-size: 125%;
+    }
+    p {
+        font-size: 100%;
+    }
+  }
